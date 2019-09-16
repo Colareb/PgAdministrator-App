@@ -28,11 +28,7 @@ public class RetrieveHeroesTask extends AsyncTask <Void, Void, Void>{
 
         this.pgListFragment = pgListFragment;
         this.email = email;
-<<<<<<< HEAD
         this.url = url + "read.php?email=";
-=======
-        this.url = url + "?email=";
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
         this.heroesSet = heroesSet;
     }
 
@@ -73,7 +69,6 @@ public class RetrieveHeroesTask extends AsyncTask <Void, Void, Void>{
 
                     JSONObject heroJSON = new JSONObject(ret.get(i).toString());
 
-<<<<<<< HEAD
                     heroName = heroJSON.getString("name_pg");
                     race = heroJSON.getString("race_pg");
                     heroClass = heroJSON.getString("class_pg");
@@ -84,18 +79,6 @@ public class RetrieveHeroesTask extends AsyncTask <Void, Void, Void>{
                     int_pg = heroJSON.getString("int_pg");
                     wis = heroJSON.getString("wis_pg");
                     cha = heroJSON.getString("cha_pg");
-=======
-                    heroName = heroJSON.getString("name");
-                    race = heroJSON.getString("race");
-                    heroClass = heroJSON.getString("class");
-                    level = heroJSON.getString("level");
-                    str = heroJSON.getString("str");
-                    dex = heroJSON.getString("dex");
-                    con = heroJSON.getString("con");
-                    int_pg = heroJSON.getString("int");
-                    wis = heroJSON.getString("wis");
-                    cha = heroJSON.getString("cha");
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
 
                     Hero hero = new Hero(heroName, race, heroClass, level, str, dex, con, int_pg, wis, cha);
 

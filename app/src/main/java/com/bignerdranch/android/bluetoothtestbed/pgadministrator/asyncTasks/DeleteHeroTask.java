@@ -27,11 +27,7 @@ public class DeleteHeroTask extends AsyncTask <Void,Void,Void>{
 
         this.namePg = namePg;
         this.email = email;
-<<<<<<< HEAD
         this.url = url + "delete.php";
-=======
-        this.url = url;
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
         contextRef = new WeakReference<>(context);
     }
 

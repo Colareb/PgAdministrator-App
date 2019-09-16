@@ -29,11 +29,7 @@ public class LoginTask extends AsyncTask<Void, Void, Void> {
 
         this.email = email;
         this.password = password;
-<<<<<<< HEAD
         this.url = url + "read.php?email=";
-=======
-        this.url = url + "?email=";
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
         this.loginActivity = new WeakReference<>(loginActivity);
     }
 
@@ -62,17 +58,10 @@ public class LoginTask extends AsyncTask<Void, Void, Void> {
                 is = user.getErrorStream();
             }
 
-<<<<<<< HEAD
             BufferedReader br = new BufferedReader(
                     new InputStreamReader(is));
 
             response = br.readLine();
-=======
-            BufferedReader br2 = new BufferedReader(
-                    new InputStreamReader(is));
-
-            response = br2.readLine();
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
 
             user.disconnect();
 
@@ -95,21 +84,12 @@ public class LoginTask extends AsyncTask<Void, Void, Void> {
                 return;
             }
 
-<<<<<<< HEAD
             if(response.contentEquals("false"))
                 Toast.makeText(loginActivity.get(), "Wrong email or password", Toast.LENGTH_LONG).show();
 
             else {
 
                 JSONObject user = new JSONObject(response);
-=======
-            JSONObject user = new JSONObject(response);
-
-            if(user.has("error"))
-                Toast.makeText(loginActivity.get(), user.getString("error"), Toast.LENGTH_LONG).show();
-
-            else {
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
 
                 if(user.getString("password").contentEquals(password)) {
                     loginActivity.get().updateUiWithUser(user.getString("email"), user.getString("username"));

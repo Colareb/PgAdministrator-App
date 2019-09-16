@@ -26,17 +26,10 @@ public class UpdateUsernameTask extends AsyncTask <Void,Void,Void>{
 
     public UpdateUsernameTask(String url, String username, String email, Context context){
 
-<<<<<<< HEAD
         this.url = url + "update.php";
         this.username = username;
         this.email = email;
         this.contextRef = new WeakReference<>(context);
-=======
-        this.url = url;
-        this.username = username;
-        this.email = email;
-        contextRef = new WeakReference<>(context);
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
     }
 
     @Override
@@ -82,10 +75,6 @@ public class UpdateUsernameTask extends AsyncTask <Void,Void,Void>{
 
             response = br.readLine();
 
-<<<<<<< HEAD
-=======
-
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
             userDatas.disconnect();
 
     } catch (

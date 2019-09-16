@@ -3,13 +3,7 @@ package com.bignerdranch.android.bluetoothtestbed.pgadministrator;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-<<<<<<< HEAD
 import org.json.JSONObject;
-=======
-
-import org.json.JSONObject;
-
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
 import java.util.HashSet;
 import java.util.Set;
 

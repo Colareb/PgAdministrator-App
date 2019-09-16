@@ -1,10 +1,6 @@
 package com.bignerdranch.android.bluetoothtestbed.pgadministrator.asyncTasks;
 
 import android.os.AsyncTask;
-<<<<<<< HEAD
-=======
-import android.util.Log;
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
 import android.view.View;
 import android.widget.Toast;
 
@@ -31,11 +27,6 @@ public class RegisterTask extends AsyncTask <Void, Void, Void>{
     private String response;
     private boolean isOk = false;
 
-<<<<<<< HEAD
-=======
-    private static final String TAG = "RegisterTask";
-
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
     public RegisterTask(String email, String password, String url, LoginActivity loginActivity) {
 
         this.url = url;
@@ -49,19 +40,10 @@ public class RegisterTask extends AsyncTask <Void, Void, Void>{
 
         try {
 
-<<<<<<< HEAD
             String urlVerifica = url + "read.php?email=" + email;
 
             URL readUser = new URL(urlVerifica);
 
-=======
-            String urlVerifica = url + "?email=" + email;
-
-            URL readUser = new URL(urlVerifica);
-
-            Log.d(TAG, "doInBackground: " + urlVerifica);
-
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
             HttpURLConnection user = (HttpURLConnection) readUser.openConnection();
 
             user.setReadTimeout(10000);
@@ -69,10 +51,6 @@ public class RegisterTask extends AsyncTask <Void, Void, Void>{
 
             user.connect();
 
-<<<<<<< HEAD
-=======
-            Log.d(TAG, "doInBackground: codice risposta server = " + user.getResponseCode());
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
             if (user.getResponseCode() / 100 == 2) {
                 user.disconnect();
                 return null;
@@ -80,13 +58,7 @@ public class RegisterTask extends AsyncTask <Void, Void, Void>{
 
             user.disconnect();
 
-<<<<<<< HEAD
             URL createUser = new URL(url + "create.php");
-=======
-            URL createUser = new URL(url);
-
-            Log.d(TAG, "doInBackground: " + url);
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
 
             HttpURLConnection userDatas = (HttpURLConnection) createUser.openConnection();
 
@@ -106,11 +78,6 @@ public class RegisterTask extends AsyncTask <Void, Void, Void>{
             writer.close();
             os.close();
 
-<<<<<<< HEAD
-=======
-            Log.d(TAG, "doInBackground:  query = " + query);
-
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
             userDatas.connect();
 
             InputStream is;

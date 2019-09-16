@@ -99,11 +99,7 @@ public class HeroesActivity extends AppCompatActivity {
                     retrieveDatas.putUsername(et.getText().toString());
 
                     //salva il nuovo username sul DB
-<<<<<<< HEAD
                     new UpdateUsernameTask(getString(R.string.gestione_utente), et.getText().toString(), email, v.getContext()).execute();
-=======
-                    new UpdateUsernameTask(getString(R.string.gestione_utente), et.getText().toString(), email, getBaseContext()).execute();
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
                 }
             }
         });

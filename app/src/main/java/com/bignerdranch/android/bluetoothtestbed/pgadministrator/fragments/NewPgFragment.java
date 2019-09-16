@@ -317,16 +317,14 @@ public class NewPgFragment extends Fragment implements View.OnClickListener {
 
         else {
 
-<<<<<<< HEAD
             if (totalCharScore == 1)
                 return;
-=======
+
             if (totalCharScore == 1){
 
                 Toast.makeText(getContext(), "You have only 1 point available!!!", Toast.LENGTH_LONG).show();
                 return;
             }
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
 
             totalCharScore = totalCharScore - 2;
 
