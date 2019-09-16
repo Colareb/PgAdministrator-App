@@ -89,6 +89,5 @@ public class UpdateUsernameTask extends AsyncTask <Void,Void,Void>{
         super.onPostExecute(aVoid);
 
         Toast.makeText(contextRef.get(), response, Toast.LENGTH_LONG).show();
-
     }
 }

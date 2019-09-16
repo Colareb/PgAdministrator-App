@@ -6,24 +6,12 @@
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
-<<<<<<< HEAD
-
         <item name="android:fontFamily">@font/font</item>
-
-=======
-        <item name="android:fontFamily">@font/font</item>
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorSecondary">@color/colorAccent</item>
-<<<<<<< HEAD
-
         <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
-
-=======
-        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
         <item name="popupMenuStyle">@style/MyListItem</item>
     </style>
 
@@ -58,20 +46,12 @@
         <item name="android:textAppearanceSmall">@style/MyTextAppearanceAlertDialog</item>
     </style>
 
-<<<<<<< HEAD
-    <!-- mi permette di utilizzare il font anche negli alert -->
-=======
     <!-- Mi permette di utilizzare il font anche negli alert -->
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
     <style name="MyTextAppearanceAlertDialog">
         <item name="android:textStyle">normal</item>
     </style>
 
-<<<<<<< HEAD
-    <!-- dropdown item spinner color and text size -->
-=======
     <!-- Dropdown item spinner colore e text size -->
->>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
     <style name="MySpinnerStyle">
         <item name="android:textColor">@color/dedText</item>
         <item name="android:textSize">18sp</item>
