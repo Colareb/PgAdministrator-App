@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Character Administrator</string>
+<<<<<<< HEAD
     <!-- Strings related to login -->
+=======
+
+    <!-- Stringhe relative al login -->
+>>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in</string>
@@ -27,8 +32,15 @@
     <string name="SHARED_PREFERENCES_HEROSTATISTICS">hero_statistics</string>
 
     <!-- URL delle servlet -->
+<<<<<<< HEAD
     <string name="gestione_hero">http://pw0213443.altervista.org/appREST/character/</string>
     <string name="gestione_utente">http://pw0213443.altervista.org/appREST/user/</string>
+=======
+    <string name="gestione_hero">http://10.201.51.235:8080/CharacterAdministrator/GestioneHero</string>
+    <string name="gestione_utente">http://10.201.51.235:8080/CharacterAdministrator/GestioneUtente</string>
+
+    <!-- Stringhe relative al NewPgFragment e HeroFragment -->
+>>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
     <string name="name_character">Name character</string>
     <string name="level">Level</string>
     <string name="level_1">1</string>

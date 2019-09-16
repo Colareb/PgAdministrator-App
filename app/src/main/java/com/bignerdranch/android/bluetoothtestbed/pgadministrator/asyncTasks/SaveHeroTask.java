@@ -36,7 +36,11 @@ public class SaveHeroTask extends AsyncTask <Void, Void, Void> {
 
     public SaveHeroTask(String url, CharSequence name, String race, String class_pg, CharSequence str, CharSequence dex, CharSequence con, CharSequence int_pg, CharSequence wis, CharSequence cha,  Context context) {
 
+<<<<<<< HEAD
         this.url = url + "create.php";
+=======
+        this.url = url;
+>>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
         this.name = name;
         this.race = race;
         this.class_pg = class_pg;
@@ -71,7 +75,11 @@ public class SaveHeroTask extends AsyncTask <Void, Void, Void> {
                     new OutputStreamWriter(os, StandardCharsets.UTF_8));
 
             String query = "{\"email\":" + "\"" + email + "\"," + "\"name\":" + "\"" + name + "\"," + "\"race\":" + "\"" + race + "\"," + "\"class\":" + "\""
+<<<<<<< HEAD
                     + class_pg + "\"," + "\"str\":" + "\"" + str + "\"," + "\"dex\":" + "\"" + dex + "\"," + "\"con\":" + "\"" + con + "\"," + "\"int_pg\":"
+=======
+                    + class_pg + "\"," + "\"str\":" + "\"" + str + "\"," + "\"dex\":" + "\"" + dex + "\"," + "\"con\":" + "\"" + con + "\"," + "\"int\":"
+>>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
                     + "\"" + int_pg + "\"," + "\"wis\":" + "\"" + wis + "\"," + "\"cha\":" + "\"" + cha + "\"}";
             writer.write(query);
             writer.flush();

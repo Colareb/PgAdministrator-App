@@ -122,7 +122,11 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
 
                     if(item.getItemId() == R.id.delete){
                         deleteItem(position);
+<<<<<<< HEAD
                     }
+=======
+                        }
+>>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
 
                     return true;
                 }
@@ -163,13 +167,20 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
 
                         if(delete){
 
+<<<<<<< HEAD
                             if(retrieveDatas.getHeroStatistics().contentEquals(hero.toString())){
+=======
+                            if(retrieveDatas.getHeroStatistics().contentEquals(hero.toString())) {
+>>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
 
                                 AppCompatActivity activity = (AppCompatActivity) mView.getContext();
                                 HeroFragment heroFragment = new HeroFragment();
                                 activity.getSupportFragmentManager().beginTransaction().replace(R.id.heroFragment, heroFragment).addToBackStack(null).commit();
                                 retrieveDatas.removeCurrentHero();
+<<<<<<< HEAD
 
+=======
+>>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
                             }
 
                             heroes.remove(hero.toString());
@@ -182,7 +193,10 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
                         return;
                     }
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
             } catch (JSONException e) {
                 e.printStackTrace();
             }

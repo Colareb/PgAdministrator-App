@@ -2,6 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$/PgAdministrator-App" vcs="Git" />
+=======
+>>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
   </component>
 </project>

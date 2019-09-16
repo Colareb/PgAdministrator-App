@@ -21,6 +21,11 @@ import java.nio.charset.StandardCharsets;
 
 public class UpdateHeroTask extends AsyncTask<Void,Void,Void> {
 
+<<<<<<< HEAD
+=======
+    private static final String TAG = "UpdateHeroTask";
+
+>>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
     private JSONObject character;
     private String url;
     private WeakReference<Context> contextRef;
@@ -28,13 +33,21 @@ public class UpdateHeroTask extends AsyncTask<Void,Void,Void> {
 
     public UpdateHeroTask(String url, JSONObject character, String oldName, String email, Context context){
 
+<<<<<<< HEAD
         this.url = url + "update.php";
+=======
+        this.url = url;
+>>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
         this.character = character;
         contextRef = new WeakReference<>(context);
 
         try {
             character.put("email",email);
+<<<<<<< HEAD
             character.put("old_name",oldName);
+=======
+            character.put("oldName",oldName);
+>>>>>>> ef4a6b4668e1601248fb4e09fe7c0033cd89e074
         } catch (JSONException e) {
             e.printStackTrace();
         }
