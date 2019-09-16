@@ -1,0 +1,69 @@
+<resources>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+
+        <item name="android:fontFamily">@font/font</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+
+        <item name="popupMenuStyle">@style/MyListItem</item>
+    </style>
+
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more_vert_red_24dp</item>
+    </style>
+
+    <style name="MyTopToolbarItem">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- posiziona il menù sotto la toolbar -->
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <!-- Required for Lollipop. -->
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">4.0dip</item>
+    </style>
+
+    <!--  Colori e stile alert dialog -->
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/dedGrey</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/dedText</item>
+        <item name="android:textAppearanceSmall">@style/MyTextAppearanceAlertDialog</item>
+    </style>
+
+    <!-- mi permette di utilizzare il font anche negli alert -->
+    <style name="MyTextAppearanceAlertDialog">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- dropdown item spinner color and text size -->
+    <style name="MySpinnerStyle">
+        <item name="android:textColor">@color/dedText</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MyListItem" parent="@android:style/Widget.PopupMenu">
+        <item name="android:background">@color/dedGrey</item>
+        <item name="android:textColor">@color/dedText</item>
+    </style>
+
+</resources>
