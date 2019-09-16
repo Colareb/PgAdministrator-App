@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dedGrey">
+
+    <RelativeLayout
+
+        android:id="@+id/newPgFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragments.NewPgFragment">
+
+        <Button
+            android:id="@+id/saveCharacterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/charTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/save_character"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/name_new_pg"
+            android:inputType="textCapSentences"
+            android:textColor="@color/dedText"
+            android:textColorHint="@color/dedText"
+            tools:ignore="Autofill" />
+
+        <ImageButton
+            android:id="@+id/addDex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addStr"
+            android:layout_alignBottom="@+id/dexTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/dexScoreTextView"
+            android:backgroundTint="@color/dedGrey"
+            android:src="@drawable/ic_add_black_36dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/addWis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addInt"
+            android:layout_alignBottom="@+id/wisTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/wisScoreTextView"
+            android:backgroundTint="@color/dedGrey"
+            android:src="@drawable/ic_add_black_36dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/addChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addWis"
+            android:layout_alignBottom="@+id/charTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/wisScoreTextView"
+            android:backgroundTint="@color/dedGrey"
+            android:src="@drawable/ic_add_black_36dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/addInt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addCon"
+            android:layout_alignBottom="@+id/intTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/intScoreTextView"
+            android:backgroundTint="@color/dedGrey"
+            android:src="@drawable/ic_add_black_36dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/addStr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pointsForStats"
+            android:layout_alignBottom="@+id/strTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/strScoreTextView"
+            android:backgroundTint="@color/dedGrey"
+            android:src="@drawable/ic_add_black_36dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/addCon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addDex"
+            android:layout_alignBottom="@+id/conTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/intScoreTextView"
+            android:backgroundTint="@color/dedGrey"
+            android:src="@drawable/ic_add_black_36dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/subStr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pointsForStats"
+            android:layout_alignBottom="@+id/strTextView"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/addStr"
+            android:backgroundTint="@color/dedGrey"
+            android:src="@drawable/ic_remove_gey_text_36dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/subDex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subStr"
+            android:layout_alignBottom="@+id/addDex"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/addDex"
+            android:backgroundTint="@color/dedGrey"
+            android:src="@drawable/ic_remove_gey_text_36dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/subCon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subDex"
+            android:layout_alignBottom="@+id/conTextView"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/addCon"
+            android:backgroundTint="@color/dedGrey"
+            android:src="@drawable/ic_remove_gey_text_36dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/subInt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subCon"
+            android:layout_alignBottom="@+id/intTextView"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/addInt"
+            android:backgroundTint="@color/dedGrey"
+            android:src="@drawable/ic_remove_gey_text_36dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/subWis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subInt"
+            android:layout_alignBottom="@+id/wisTextView"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/addWis"
+            android:backgroundTint="@color/dedGrey"
+            android:src="@drawable/ic_remove_gey_text_36dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/subChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subWis"
+            android:layout_alignBottom="@+id/charTextView"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/addChar"
+            android:backgroundTint="@color/dedGrey"
+            android:src="@drawable/ic_remove_gey_text_36dp"
+            tools:ignore="ContentDescription" />
+
+        <Spinner
+            android:id="@+id/classSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:entries="@array/classes_array"
+            android:popupBackground="@color/dedGrey"
+            android:theme="@style/MySpinnerStyle" />
+
+        <Spinner
+            android:id="@+id/raceSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTextView"
+            android:layout_alignStart="@+id/nameTextView"
+            android:layout_alignBottom="@+id/classSpinner"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="87dp"
+            android:layout_marginBottom="0dp"
+            android:entries="@array/races_array"
+            android:popupBackground="@color/dedGrey"
+            android:theme="@style/MySpinnerStyle" />
+
+        <TextView
+            android:id="@+id/dexScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dexTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/conTextView"
+            android:text="@string/points_new_pg_8"
+            android:textColor="@color/dedText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/charScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/charTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/conTextView"
+            android:text="@string/points_new_pg_8"
+            android:textColor="@color/dedText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/pointsForStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/classSpinner"
+            android:layout_marginTop="32dp"
+            android:clickable="true"
+            android:ems="10"
+            android:focusable="true"
+            android:onClick="showPointsRules"
+            android:text="@string/available_points_new_hero_27"
+            android:textAlignment="center"
+            android:textColor="@color/dedText"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/strTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pointsForStats"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/strength"
+            android:textColor="@color/dedText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/dexTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/strTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/dexterity"
+            android:textColor="@color/dedText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/conTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dexTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/constitution"
+            android:textColor="@color/dedText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/charTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wisTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/charisma"
+            android:textColor="@color/dedText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/intTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/conTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/intelligence"
+            android:textColor="@color/dedText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/wisTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/wisdom"
+            android:textColor="@color/dedText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/strScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pointsForStats"
+            android:layout_alignBottom="@+id/strTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/conTextView"
+            android:text="@string/points_new_pg_8"
+            android:textColor="@color/dedText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/conScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/conTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/conTextView"
+            android:text="@string/points_new_pg_8"
+            android:textColor="@color/dedText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/intScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/intTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/conTextView"
+            android:text="@string/points_new_pg_8"
+            android:textColor="@color/dedText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/wisScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/wisTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/conTextView"
+            android:text="@string/points_new_pg_8"
+            android:textColor="@color/dedText"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+</ScrollView>
